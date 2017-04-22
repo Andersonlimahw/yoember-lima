@@ -24,7 +24,7 @@ define('yo-app/tests/controllers/contact.jshint.lint-test', ['exports'], functio
   QUnit.module('JSHint | controllers/contact.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'controllers/contact.js should pass jshint.\ncontrollers/contact.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/contact.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/contact.js: line 14, col 5, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\ncontrollers/contact.js: line 15, col 35, \'template literal syntax\' is only available in ES6 (use \'esversion: 6\').\n\n4 errors');
+    assert.ok(false, 'controllers/contact.js should pass jshint.\ncontrollers/contact.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/contact.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/contact.js: line 15, col 5, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\ncontrollers/contact.js: line 17, col 7, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\ncontrollers/contact.js: line 18, col 7, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\ncontrollers/contact.js: line 20, col 7, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\ncontrollers/contact.js: line 25, col 39, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/contact.js: line 26, col 37, \'template literal syntax\' is only available in ES6 (use \'esversion: 6\').\n\n8 errors');
   });
 });
 define('yo-app/tests/controllers/index.jshint.lint-test', ['exports'], function (exports) {
@@ -294,6 +294,15 @@ define('yo-app/tests/helpers/unstub-firebase', ['exports', 'firebase'], function
     }
   }
 });
+define('yo-app/tests/models/contact.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | models/contact.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'models/contact.js should pass jshint.\nmodels/contact.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nmodels/contact.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
+  });
+});
 define('yo-app/tests/models/invitation.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
@@ -394,6 +403,28 @@ define('yo-app/tests/unit/controllers/index-test.jshint.lint-test', ['exports'],
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/controllers/index-test.js should pass jshint.');
+  });
+});
+define('yo-app/tests/unit/models/contact-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleForModel)('contact', 'Unit | Model | contact', {
+    // Specify the other units that are required for this test.
+    needs: []
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var model = this.subject();
+    // let store = this.store();
+    assert.ok(!!model);
+  });
+});
+define('yo-app/tests/unit/models/contact-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/models/contact-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/models/contact-test.js should pass jshint.');
   });
 });
 define('yo-app/tests/unit/models/invitation-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {

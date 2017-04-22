@@ -36,6 +36,7 @@ define('yo-app/components/welcome-page', ['exports', 'ember-welcome-page/compone
 define('yo-app/controllers/contact', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = _ember['default'].Controller.extend({
 
+    headerMessage: 'Message from Contact form',
     emailContact: '',
     message: '',
 
@@ -46,9 +47,21 @@ define('yo-app/controllers/contact', ['exports', 'ember'], function (exports, _e
 
     actions: {
       sendMessage: function sendMessage() {
-        this.set('responseMessage', 'Message sent successfully, using the email : ' + this.get('emailContact'));
-        this.set('emailContact', '');
-        this.set('message', '');
+        var _this = this;
+
+        var email = this.get('emailContact');
+        var message = this.get('message');
+
+        var newMessage = this.store.createRecord('contact', {
+          email: email,
+          message: message
+        });
+
+        newMessage.save().then(function (response) {
+          _this.set('responseMessage', 'Message sent successfully, using the email : ' + _this.get('emailContact'));
+          _this.set('emailContact', '');
+          _this.set('message', '');
+        });
       }
     }
 
@@ -274,6 +287,12 @@ define("yo-app/instance-initializers/ember-data", ["exports", "ember-data/-priva
     name: "ember-data",
     initialize: _emberDataPrivateInstanceInitializersInitializeStoreService["default"]
   };
+});
+define('yo-app/models/contact', ['exports', 'ember-data'], function (exports, _emberData) {
+  exports['default'] = _emberData['default'].Model.extend({
+    email: _emberData['default'].attr('string'),
+    message: _emberData['default'].attr('string')
+  });
 });
 define('yo-app/models/invitation', ['exports', 'ember-data'], function (exports, _emberData) {
   exports['default'] = _emberData['default'].Model.extend({
