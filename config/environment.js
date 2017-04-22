@@ -2,10 +2,27 @@
 
 module.exports = function(environment) {
   var ENV = {
+  
     modulePrefix: 'yo-app',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: "AIzaSyBGyZLr2IB4oHsyHDnI7KYIW-32qREdWXQ",
+      authDomain: "yoapp-21b53.firebaseapp.com",
+      databaseURL: "https://yoapp-21b53.firebaseio.com",
+      projectId: "yoapp-21b53",
+      storageBucket: "yoapp-21b53.appspot.com",
+      messagingSenderId: "981020605687"
+    },
+
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
