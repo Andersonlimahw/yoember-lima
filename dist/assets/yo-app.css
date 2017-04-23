@@ -5831,4 +5831,5 @@ body {
 .no-padding-left {
   padding-left: 0; }
 
-/*# sourceMappingURL=yo-app.css.map */
+.library-item {
+  min-height: 150px; }

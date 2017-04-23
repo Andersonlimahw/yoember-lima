@@ -33,3 +33,30 @@
 [info] Public Directory: dist
 [info] 
 [info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/bin/nodejs /usr/bin/firebase serve
+[debug] CLI Version:  3.6.1
+[debug] Platform:     linux
+[debug] Node Version: v6.10.0
+[debug] Time:         Sun Apr 23 2017 04:29:26 GMT-0300 (BRT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yoapplima  
+ Sun Apr 23 2017 04:29:26 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/yoapplima/tokens  
+ Sun Apr 23 2017 04:29:27 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /home/jarvis/cursos/SCIENSA/EMBER/yoember-lima
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/yoapplima  
+ Sun Apr 23 2017 04:29:29 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/670904994935/clients/_:getWebAppConfig  
+ Sun Apr 23 2017 04:29:30 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[info] Public Directory: dist
+[info] 
+[info] Server listening at: http://localhost:5000
