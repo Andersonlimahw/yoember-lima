@@ -5,6 +5,17 @@ define('yo-app/routes/libraries/edit', ['exports', 'ember'], function (exports, 
       return this.store.findRecord('library', params.library_id);
     },
 
+    setupController: function setupController(controller, model) {
+      this._super(controller, model);
+
+      controller.set('title', 'Edit library');
+      controller.set('buttonLabel', 'Save changes');
+    },
+
+    renderTemplate: function renderTemplate() {
+      this.render('libraries/form');
+    },
+
     actions: {
 
       saveLibrary: function saveLibrary(newLibrary) {
@@ -16,7 +27,6 @@ define('yo-app/routes/libraries/edit', ['exports', 'ember'], function (exports, 
       },
 
       willTransition: function willTransition(transition) {
-
         var model = this.controller.get('model');
 
         if (model.get('hasDirtyAttributes')) {

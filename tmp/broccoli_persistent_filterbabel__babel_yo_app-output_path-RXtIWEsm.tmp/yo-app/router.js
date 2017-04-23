@@ -5,7 +5,6 @@ define('yo-app/router', ['exports', 'ember', 'yo-app/config/environment'], funct
   });
 
   Router.map(function () {
-
     this.route('about');
     this.route('contact');
 
@@ -17,6 +16,7 @@ define('yo-app/router', ['exports', 'ember', 'yo-app/config/environment'], funct
     this.route('libraries', function () {
       this.route('new');
       this.route('edit', { path: '/:library_id/edit' });
+      this.route('form');
     });
   });
 

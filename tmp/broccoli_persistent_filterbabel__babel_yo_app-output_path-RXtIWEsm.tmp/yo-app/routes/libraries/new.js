@@ -5,6 +5,17 @@ define('yo-app/routes/libraries/new', ['exports', 'ember'], function (exports, _
       return this.store.createRecord('library');
     },
 
+    setupController: function setupController(controller, model) {
+      this._super(controller, model);
+
+      controller.set('title', 'Create a new library');
+      controller.set('buttonLabel', 'Create');
+    },
+
+    renderTemplate: function renderTemplate() {
+      this.render('libraries/form');
+    },
+
     actions: {
 
       saveLibrary: function saveLibrary(newLibrary) {
@@ -16,9 +27,11 @@ define('yo-app/routes/libraries/new', ['exports', 'ember'], function (exports, _
       },
 
       willTransition: function willTransition() {
-        // rollbackAttributes() removes the record from the store
-        // if the model 'isNew'
-        this.controller.get('model').rollbackAttributes();
+        var model = this.controller.get('model');
+
+        if (model.get('isNew')) {
+          model.destroyRecord();
+        }
       }
     }
   });
