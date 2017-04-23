@@ -3,7 +3,11 @@
 [debug] CLI Version:  3.6.1
 [debug] Platform:     linux
 [debug] Node Version: v6.10.0
+<<<<<<< HEAD
 [debug] Time:         Sun Apr 23 2017 03:56:28 GMT-0300 (BRT)
+=======
+[debug] Time:         Sun Apr 23 2017 02:44:53 GMT-0300 (BRT)
+>>>>>>> parent of 9481c85... upagrade with edit
 [debug] ----------------------------------------------------------------------
 [debug] 
 [debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
@@ -13,6 +17,7 @@
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+<<<<<<< HEAD
  Sun Apr 23 2017 03:56:28 GMT-0300 (BRT)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yoapplima  
@@ -20,11 +25,21 @@
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/yoapplima/tokens  
  Sun Apr 23 2017 03:56:30 GMT-0300 (BRT)
+=======
+ Sun Apr 23 2017 02:44:53 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yoapplima  
+ Sun Apr 23 2017 02:44:54 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/yoapplima/tokens  
+ Sun Apr 23 2017 02:44:55 GMT-0300 (BRT)
+>>>>>>> parent of 9481c85... upagrade with edit
 [debug] <<< HTTP RESPONSE 200
 [info] Starting Firebase development server...
 [info] 
 [info] Project Directory: /home/jarvis/cursos/SCIENSA/EMBER/yoember-lima
 [debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/yoapplima  
+<<<<<<< HEAD
  Sun Apr 23 2017 03:56:31 GMT-0300 (BRT)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/670904994935/clients/_:getWebAppConfig  
@@ -83,6 +98,12 @@
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/670904994935/clients/_:getWebAppConfig  
  Sun Apr 23 2017 05:11:31 GMT-0300 (BRT)
+=======
+ Sun Apr 23 2017 02:44:56 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/670904994935/clients/_:getWebAppConfig  
+ Sun Apr 23 2017 02:44:57 GMT-0300 (BRT)
+>>>>>>> parent of 9481c85... upagrade with edit
 [debug] <<< HTTP RESPONSE 200
 [info] Public Directory: dist
 [info] 
