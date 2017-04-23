@@ -1,0 +1,1 @@
+/home/jarvis/cursos/SCIENSA/EMBER/yoember-lima/tmp/broccoli_merge_trees-input_base_path-FhfHK2GM.tmp/1/ember-cli-test-loader/test-support/index.js

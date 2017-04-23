@@ -1,0 +1,3 @@
+define("yo-app/templates/application", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template({ "id": "E0HdysRe", "block": "{\"statements\":[[\"partial\",\"navbar\"],[\"text\",\"\\n\"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"container\"],[\"flush-element\"],[\"text\",\"    \\n    \"],[\"append\",[\"unknown\",[\"outlet\"]],false],[\"text\",\"\\n\"],[\"close-element\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":true}", "meta": { "moduleName": "yo-app/templates/application.hbs" } });
+});

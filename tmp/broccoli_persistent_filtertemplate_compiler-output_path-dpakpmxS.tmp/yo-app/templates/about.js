@@ -1,0 +1,1 @@
+export default Ember.HTMLBars.template({"id":"c9MVB38U","block":"{\"statements\":[[\"open-element\",\"h1\",[]],[\"flush-element\"],[\"text\",\"About page\"],[\"close-element\"],[\"text\",\"\\n\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}","meta":{"moduleName":"yo-app/templates/about.hbs"}});

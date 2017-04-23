@@ -1,0 +1,1 @@
+/home/jarvis/cursos/SCIENSA/EMBER/yoember-lima/tmp/funnel-input_base_path-AYd7wL99.tmp/index.js
