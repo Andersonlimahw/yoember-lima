@@ -8,13 +8,13 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
 
-    firebase: {
-      apiKey: "AIzaSyBGyZLr2IB4oHsyHDnI7KYIW-32qREdWXQ",
-      authDomain: "yoapp-21b53.firebaseapp.com",
-      databaseURL: "https://yoapp-21b53.firebaseio.com",
-      projectId: "yoapp-21b53",
-      storageBucket: "yoapp-21b53.appspot.com",
-      messagingSenderId: "981020605687"
+     firebase: {
+      apiKey: "AIzaSyCWIGPUYGR8oFWubxLNdakCP724evbJW8s",
+      authDomain: "yoapplima.firebaseapp.com",
+      databaseURL: "https://yoapplima.firebaseio.com",
+      projectId: "yoapplima",
+      storageBucket: "yoapplima.appspot.com",
+      messagingSenderId: "670904994935"
     },
 
     contentSecurityPolicy: {
