@@ -4,6 +4,8 @@ define('yo-app/models/library', ['exports', 'ember-data'], function (exports, _e
     address: _emberData['default'].attr('string'),
     phone: _emberData['default'].attr('string'),
 
+    books: _emberData['default'].hasMany('book'),
+
     isValid: Ember.computed.notEmpty('name')
   });
 });
