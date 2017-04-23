@@ -1,0 +1,17 @@
+<h2>List of contacts</h2>
+
+{{#each model as |contact|}}
+
+<div class="col-sm-6 col-md-4 no-padding-left">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Contact from YoApp</h3>
+		</div>
+		<div class="panel-body">
+			<p>Email: {{contact.email}}</p>
+			<p>Message: {{contact.message}}</p>
+		</div>
+	</div>
+</div>
+
+{{/each}}

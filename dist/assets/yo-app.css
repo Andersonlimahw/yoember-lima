@@ -5820,4 +5820,15 @@ body {
 .contact-form div {
   margin-top: 10px; }
 
+.no-padding-sides {
+  padding-left: 0;
+  padding-right: 0; }
+
+.no-padding-vertical {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.no-padding-left {
+  padding-left: 0; }
+
 /*# sourceMappingURL=yo-app.css.map */
